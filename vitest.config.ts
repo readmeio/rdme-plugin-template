@@ -1,4 +1,5 @@
-import {defineConfig} from 'vitest/config'
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
   test: {
@@ -6,4 +7,4 @@ export default defineConfig({
     // so we can run assertions against console output.
     disableConsoleIntercept: true,
   },
-})
+});

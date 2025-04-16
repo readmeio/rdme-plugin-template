@@ -1,15 +1,17 @@
-`@readme/rdme-plugin-template`
-=================
+# `@readme/rdme-plugin-template`
 
 A new CLI generated with oclif
 
-
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
+
+- [Usage](#usage)
+- [Commands](#commands)
 <!-- tocstop -->
+
 # Usage
+
 <!-- usage -->
+
 ```sh-session
 $ npm install -g @readme/rdme-plugin-template
 $ example-bin COMMAND
@@ -21,22 +23,26 @@ USAGE
   $ example-bin COMMAND
 ...
 ```
+
 <!-- usagestop -->
+
 # Commands
+
 <!-- commands -->
-* [`example-bin hello PERSON`](#example-bin-hello-person)
-* [`example-bin hello world`](#example-bin-hello-world)
-* [`example-bin help [COMMAND]`](#example-bin-help-command)
-* [`example-bin plugins`](#example-bin-plugins)
-* [`example-bin plugins add PLUGIN`](#example-bin-plugins-add-plugin)
-* [`example-bin plugins:inspect PLUGIN...`](#example-bin-pluginsinspect-plugin)
-* [`example-bin plugins install PLUGIN`](#example-bin-plugins-install-plugin)
-* [`example-bin plugins link PATH`](#example-bin-plugins-link-path)
-* [`example-bin plugins remove [PLUGIN]`](#example-bin-plugins-remove-plugin)
-* [`example-bin plugins reset`](#example-bin-plugins-reset)
-* [`example-bin plugins uninstall [PLUGIN]`](#example-bin-plugins-uninstall-plugin)
-* [`example-bin plugins unlink [PLUGIN]`](#example-bin-plugins-unlink-plugin)
-* [`example-bin plugins update`](#example-bin-plugins-update)
+
+- [`example-bin hello PERSON`](#example-bin-hello-person)
+- [`example-bin hello world`](#example-bin-hello-world)
+- [`example-bin help [COMMAND]`](#example-bin-help-command)
+- [`example-bin plugins`](#example-bin-plugins)
+- [`example-bin plugins add PLUGIN`](#example-bin-plugins-add-plugin)
+- [`example-bin plugins:inspect PLUGIN...`](#example-bin-pluginsinspect-plugin)
+- [`example-bin plugins install PLUGIN`](#example-bin-plugins-install-plugin)
+- [`example-bin plugins link PATH`](#example-bin-plugins-link-path)
+- [`example-bin plugins remove [PLUGIN]`](#example-bin-plugins-remove-plugin)
+- [`example-bin plugins reset`](#example-bin-plugins-reset)
+- [`example-bin plugins uninstall [PLUGIN]`](#example-bin-plugins-uninstall-plugin)
+- [`example-bin plugins unlink [PLUGIN]`](#example-bin-plugins-unlink-plugin)
+- [`example-bin plugins update`](#example-bin-plugins-update)
 
 ## `example-bin hello PERSON`
 
@@ -389,4 +395,5 @@ DESCRIPTION
 ```
 
 _See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.4.36/src/commands/plugins/update.ts)_
+
 <!-- commandsstop -->

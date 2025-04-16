@@ -4,30 +4,27 @@
   "version": "0.0.0",
   "author": "ReadMe",
   "bin": {
-    "example-bin": "./bin/run.js"
+    "example-bin": "bin/run.js"
   },
   "bugs": "https://github.com/readmeio/rdme-plugin-template/issues",
   "dependencies": {
     "@oclif/core": "^4",
     "@oclif/plugin-help": "^6",
-    "@oclif/plugin-plugins": "^5"
+    "@oclif/plugin-plugins": "^5",
+    "@readme/eslint-config": "^14.6.0",
+    "eslint": "^8.57.1"
   },
   "devDependencies": {
-    "@eslint/compat": "^1",
-    "@oclif/prettier-config": "^0.2.1",
     "@oclif/test": "^4",
     "@types/node": "^18",
-    "eslint": "^9",
-    "eslint-config-oclif": "^6",
-    "eslint-config-prettier": "^10",
     "oclif": "^4",
-    "shx": "^0.3.3",
+    "prettier": "^3.5.3",
     "tsx": "^4.19.3",
     "typescript": "^5",
     "vitest": "^3.1.1"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.10.0"
   },
   "files": [
     "./bin",
@@ -36,10 +33,13 @@
   ],
   "homepage": "https://github.com/readmeio/rdme-plugin-template",
   "keywords": [
+    "rdme",
+    "readme",
+    "cli",
+    "plugin",
     "oclif"
   ],
   "license": "MIT",
-  "main": "dist/index.js",
   "type": "module",
   "oclif": {
     "bin": "example-bin",
@@ -56,14 +56,19 @@
       }
     }
   },
-  "repository": "readmeio/rdme-plugin-template",
+  "prettier": "@readme/eslint-config/prettier",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/readmeio/rdme-plugin-template.git"
+  },
   "scripts": {
-    "build": "shx rm -rf dist && tsc -b",
-    "lint": "eslint",
-    "postpack": "shx rm -f oclif.manifest.json",
-    "posttest": "npm run lint",
-    "prepack": "oclif manifest && oclif readme",
+    "build": "tsc",
+    "lint": "npm run lint:ts && npm run prettier",
+    "lint:ts": "eslint . --ext .js,.ts",
+    "prebuild": "rm -rf dist",
+    "prettier": "prettier --check .",
+    "prepack": "npm run build",
     "test": "vitest",
-    "version": "oclif readme && git add README.md"
+    "version": "oclif manifest"
   }
 }
