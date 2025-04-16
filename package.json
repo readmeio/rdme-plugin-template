@@ -16,18 +16,15 @@
     "@eslint/compat": "^1",
     "@oclif/prettier-config": "^0.2.1",
     "@oclif/test": "^4",
-    "@types/chai": "^4",
-    "@types/mocha": "^10",
     "@types/node": "^18",
-    "chai": "^4",
     "eslint": "^9",
     "eslint-config-oclif": "^6",
     "eslint-config-prettier": "^10",
-    "mocha": "^10",
     "oclif": "^4",
     "shx": "^0.3.3",
-    "ts-node": "^10",
-    "typescript": "^5"
+    "tsx": "^4.19.3",
+    "typescript": "^5",
+    "vitest": "^3.1.1"
   },
   "engines": {
     "node": ">=18.0.0"
@@ -66,8 +63,7 @@
     "postpack": "shx rm -f oclif.manifest.json",
     "posttest": "npm run lint",
     "prepack": "oclif manifest && oclif readme",
-    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "test": "vitest",
     "version": "oclif readme && git add README.md"
-  },
-  "types": "dist/index.d.ts"
+  }
 }
