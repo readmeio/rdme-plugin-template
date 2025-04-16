@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    name: Test Suite
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version:
+          # see the following:
+          # https://github.com/actions/setup-node?tab=readme-ov-file#supported-version-syntax
+          # https://github.com/nvm-sh/nvm/issues/1998#issuecomment-594958684
+          - lts/-1
+          - lts/*
+          - latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+
+      - name: Build and run tests
+        run: npm cit
+
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build dist
+        run: npm run build
+
+      - name: Run tests
+        run: npm run lint
