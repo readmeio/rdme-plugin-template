@@ -8,16 +8,14 @@
   },
   "bugs": "https://github.com/readmeio/rdme-plugin-template/issues",
   "dependencies": {
-    "@oclif/core": "^4",
-    "@oclif/plugin-help": "^6",
-    "@oclif/plugin-plugins": "^5",
-    "@readme/eslint-config": "^14.6.0",
-    "eslint": "^8.57.1"
+    "@oclif/core": "^4"
   },
   "devDependencies": {
     "@oclif/test": "^4",
-    "@types/node": "^18",
-    "oclif": "^4",
+    "@readme/eslint-config": "^14.6.0",
+    "@types/node": "^22.14.1",
+    "eslint": "^8.57.1",
+    "oclif": "^4.17.44",
     "prettier": "^3.5.3",
     "tsx": "^4.19.3",
     "typescript": "^5",
@@ -45,10 +43,6 @@
     "bin": "example-bin",
     "dirname": "example-dirname",
     "commands": "./dist/commands",
-    "plugins": [
-      "@oclif/plugin-help",
-      "@oclif/plugin-plugins"
-    ],
     "topicSeparator": " ",
     "topics": {
       "hello": {
