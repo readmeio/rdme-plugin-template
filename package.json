@@ -62,7 +62,7 @@
     "lint:ts": "eslint . --ext .js,.ts",
     "prebuild": "rm -rf dist",
     "prettier": "prettier --check .",
-    "prepack": "npm run build",
+    "prepare": "npm run build",
     "test": "vitest",
     "version": "oclif manifest"
   }
