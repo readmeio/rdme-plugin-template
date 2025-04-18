@@ -15,6 +15,7 @@
     "@readme/eslint-config": "^14.6.0",
     "@types/node": "^22.14.1",
     "eslint": "^8.57.1",
+    "knip": "^5.50.5",
     "oclif": "^4.17.44",
     "prettier": "^3.5.3",
     "tsx": "^4.19.3",
@@ -57,7 +58,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "lint": "npm run lint:ts && npm run prettier",
+    "lint": "npm run lint:ts && npm run prettier && knip",
     "lint:ts": "eslint . --ext .js,.ts",
     "prebuild": "rm -rf dist",
     "prettier": "prettier --check .",
