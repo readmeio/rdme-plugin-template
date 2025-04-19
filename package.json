@@ -64,7 +64,6 @@
     "prepack": "oclif manifest",
     "prepare": "npm run build",
     "prettier": "prettier --check .",
-    "test": "vitest",
-    "version": "oclif manifest"
+    "test": "vitest"
   }
 }
