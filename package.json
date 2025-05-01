@@ -13,12 +13,12 @@
   "devDependencies": {
     "@oclif/test": "^4",
     "@readme/eslint-config": "^14.6.0",
-    "@types/node": "^22.14.1",
+    "@types/node": "^22.15.3",
     "eslint": "^8.57.1",
-    "knip": "^5.50.5",
+    "knip": "^5.52.0",
     "oclif": "^4.17.46",
     "prettier": "^3.5.3",
-    "tsx": "^4.19.3",
+    "tsx": "^4.19.4",
     "typescript": "^5",
     "vitest": "^3.1.2"
   },
