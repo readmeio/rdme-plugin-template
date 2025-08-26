@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "module": "Node18",
+    "erasableSyntaxOnly": true,
+    "module": "node20",
     "outDir": "dist",
     "rootDir": "src",
     "strict": true,
-    "target": "es2022"
+    "verbatimModuleSyntax": true,
   },
   "include": ["./src/**/*"]
 }
