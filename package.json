@@ -11,10 +11,10 @@
     "@oclif/core": "^4"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.2.2",
     "@oclif/test": "^4",
-    "@readme/eslint-config": "^14.7.2",
+    "@readme/standards": "^2.1.1",
     "@types/node": "^24.0.8",
-    "eslint": "^8.57.1",
     "knip": "^5.61.3",
     "oclif": "^4.20.1",
     "prettier": "^3.6.2",
@@ -51,7 +51,7 @@
       }
     }
   },
-  "prettier": "@readme/eslint-config/prettier",
+  "prettier": "@readme/standards/prettier",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/readmeio/rdme-plugin-template.git"
@@ -59,7 +59,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "npm run lint:ts && npm run prettier && knip",
-    "lint:ts": "eslint . --ext .js,.ts",
+    "lint:ts": "biome check --error-on-warnings",
     "prebuild": "rm -rf dist",
     "prepack": "oclif manifest",
     "prepare": "npm run build",
