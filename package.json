@@ -11,12 +11,12 @@
     "@oclif/core": "^4"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.3.13",
+    "@biomejs/biome": "^2.4.4",
     "@oclif/test": "^4",
     "@readme/standards": "^2.4.0",
-    "@types/node": "^25.1.0",
-    "knip": "^5.82.1",
-    "oclif": "^4.22.73",
+    "@types/node": "^25.3.3",
+    "knip": "^5.85.0",
+    "oclif": "^4.22.81",
     "prettier": "^3.8.1",
     "tsx": "^4.21.0",
     "typescript": "^5",
