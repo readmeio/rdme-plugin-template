@@ -15,7 +15,7 @@
     "@oclif/test": "^4",
     "@readme/standards": "^2.4.0",
     "@types/node": "^25.1.0",
-    "knip": "^5.82.1",
+    "knip": "^6.2.0",
     "oclif": "^4.22.73",
     "prettier": "^3.8.1",
     "tsx": "^4.21.0",
